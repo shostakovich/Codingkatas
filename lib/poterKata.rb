@@ -39,16 +39,11 @@ class Series
 
   def get_discount_in_percent
     case @books.length
-      when 2
-        5
-      when 3
-        10
-      when 4
-        20
-      when 5
-        25
-      else
-        0
+      when 2 then 5
+      when 3 then 10
+      when 4 then 20
+      when 5 then 25
+      else 0
     end
   end
 end
